@@ -7,7 +7,8 @@
  * Name: Hephzibah Nick-Oshomah
  * Student ID: 180580219
  * Date: 19/06/2023
- *
+ * Online (Cyclic) Link: https://web-storefront.cyclic.app/
+ * https://crowded-pig-houndstooth.cyclic.app/
  ********************************************************************************/
 var HTTP_PORT = process.env.PORT || 8080;
 var express = require("express");
@@ -27,8 +28,8 @@ app.use(express.urlencoded({ extended: true }));
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "/views/home.html"));
 });
-app.get('/storefront', (req, res) => {
-  res.sendFile(path.join(__dirname, '/views/storefront.html'));
+app.get("/storefront", (req, res) => {
+  res.sendFile(path.join(__dirname, "/views/storefront.html"));
 });
 app.get("/audio", (req, res) => {
   res.sendFile(path.join(__dirname, "/views/audio.html"));
@@ -61,6 +62,9 @@ app.get("/employee/:employeeNum", (req, res) => {
 
 app.use((req, res) => {
   res.status(404).send("Page Not Found");
+});
+app.listen(HTTP_PORT, function () {
+  console.log("app listening on: " + HTTP_PORT);
 });
 data
   .initialize()
