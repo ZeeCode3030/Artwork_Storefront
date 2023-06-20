@@ -63,9 +63,7 @@ app.get("/employee/:employeeNum", (req, res) => {
 app.use((req, res) => {
   res.status(404).send("Page Not Found");
 });
-app.listen(HTTP_PORT, function () {
-  console.log("app listening on: " + HTTP_PORT);
-});
+
 data
   .initialize()
   .then(function () {
