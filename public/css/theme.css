@@ -58,7 +58,7 @@ main.container {
   font-weight: 600;
   box-shadow: 5px 5px 5px #4a4a4a;
 }
-.container-fluid {
+.container-fluid { /*navigation bar class*/
   display: grid;
   grid-template-rows: max-content;
   color: white;
@@ -102,10 +102,11 @@ li {
 }
 figure {
   justify-self: center;
-  padding: 20px;
+  /* justify-content: center; */
+  padding: 10px 50px 5px 50px;
 }
 video {
-  width: 100%;
+  width: 60%;
 }
 .lists {
   padding: 5px 50px 50px 50px;
