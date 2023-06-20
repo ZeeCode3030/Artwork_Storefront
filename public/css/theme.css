@@ -111,6 +111,10 @@ video {
 .lists {
   padding: 5px 50px 50px 50px;
 }
+table{
+  margin:inherit;
+
+}
 th{
   color: #22badd ;
   font-family: "Domine", serif;
