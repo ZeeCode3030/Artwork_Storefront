@@ -2,7 +2,7 @@
 @import "/node_modules/bootstrap/scss/_variables-dark.scss";
 @import "/node_modules/bootstrap/scss/_variables.scss";
 @import "/node_modules/bootstrap/scss/_functions.scss";
-
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@600&family=Domine&family=Great+Vibes&family=Playfair+Display&display=swap");
 html {
   overflow: auto;
   background: bisque; /* fallback color */
@@ -11,19 +11,19 @@ html {
   background-size: cover;
   width: 100%;
   height: 100%;
+  justify-content: center;
 }
 head {
   /* height: 50px; */
-  padding: 50px;
+  padding: 10px;
   border: 1px solid #144f5a;
-}
-#menu{
-  display:grid;
-  grid-template-columns: 2fr 2fr 2fr 2fr;
+  overflow: auto;
+  background-size: cover;
+  width: 100%;
+  height: fit-content;
 }
 
-body, main {
-  display: grid;
+body {
   justify-content: center;
   overflow: auto;
   background: bisque; /* fallback color */
@@ -32,10 +32,8 @@ body, main {
   background-size: cover;
   width: 100%;
   height: 100%;
-  padding: 50px;
-}
-h1 {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 10px;
+  font-weight: 500;
 }
 main.container {
   display: grid;
@@ -45,16 +43,82 @@ main.container {
 .row {
   border-width: 10px;
   justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 8px;
 }
 
 .card {
   padding: 10px;
   margin: 8px;
   background-color: rgb(183, 214, 242);
-  max-width: max-content;
   border-radius: 20px;
-  /* max-width: 25%;   */
   color: #144f5a;
   font-weight: 600;
   box-shadow: 5px 5px 5px #4a4a4a;
+}
+.container-fluid {
+  display: grid;
+  grid-template-rows: max-content;
+  color: white;
+}
+h1,
+h2,
+h3,
+h4
+ {
+  color: antiquewhite !important;
+  /* border-bottom: 0.5pt solid #144f5a; */
+  /* font-family: 'Cormorant SC', serif; */
+  /* font-family: 'Playfair Display', serif; */
+  font-family: "Domine", serif;
+}
+.card-title{
+  font-family: "Domine", serif;
+  font-weight: 700;
+  color:#dd22ba !important;
+}
+.card-text{
+  padding-right: 0;
+}
+p {
+  font-weight: 600;
+  font-family: "Playfair Display", serif;
+  padding-right:100px;
+  padding-left:10px;
+}
+li {
+  font-weight: 500;
+  font-family: "Domine", serif;
+}
+
+.nav-bar-nav, .nav-link {
+  font-family: "Domine", serif !important;
+}
+.section {
+  padding: 5px 50px 50px 50px;
+
+}
+figure {
+  justify-self: center;
+  padding: 20px;
+}
+video {
+  width: 100%;
+}
+.lists {
+  padding: 5px 50px 50px 50px;
+}
+th{
+  color: #22badd ;
+  font-family: "Domine", serif;
+
+}
+tr{
+  font-family: 'Great Vibes', cursive;
+  font-size: 1.3em;
+  font-weight: 600;
+  background-color: #144f5a;
+
 }
